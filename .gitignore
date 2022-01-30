@@ -1,2 +1,6 @@
 .vscode
 output
+
+# python
+*.pyc
+__pycache__
