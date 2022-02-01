@@ -34,7 +34,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                <h1 id="title"><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
@@ -51,10 +51,11 @@
           {% endfor %}
         {% endif %}
         </ul></nav><!-- /#menu -->
+        <p>skdjskdj</p>
         {% block content %}
         {% endblock %}
         <footer id="contentinfo" class="body">
-          footer
+          <p>slkdslkd</p>
         </footer><!-- /#contentinfo -->
 </body>
 </html>
