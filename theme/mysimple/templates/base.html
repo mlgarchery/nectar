@@ -5,6 +5,7 @@
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
         {% endif %}
@@ -47,15 +48,16 @@
         {% endif %}
         {% if DISPLAY_CATEGORIES_ON_MENU %}
           {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% if cat!="misc" %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endif %}
           {% endfor %}
         {% endif %}
         </ul></nav><!-- /#menu -->
-        <p>skdjskdj</p>
         {% block content %}
         {% endblock %}
         <footer id="contentinfo" class="body">
-          <p>slkdslkd</p>
+          <a href="{{ SITEURL }}/about.html">A propos</a>
         </footer><!-- /#contentinfo -->
 </body>
 </html>

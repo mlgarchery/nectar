@@ -1,13 +1,14 @@
 AUTHOR = 'Cyrané'
 SITENAME = 'Nectar Journal'
 SITEURL = ''
+# place at root with filename favicon.ico the images/favicon-256x256.png file
+EXTRA_PATH_METADATA = {'images/favicon-256x256.png': {'path': 'favicon.ico'},}
 
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'fr'
-
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -24,7 +25,7 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 5
 
-THEME = "mysimple"
+THEME = "theme/mysimple"
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

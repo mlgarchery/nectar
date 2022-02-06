@@ -1,8 +1,8 @@
 Title: Three generations of foxes
 Date: 2022-01-30
-Category: Poésie
-Tags: écologie, poème
-Slug: trois-générations-renard
+Category: Janvier 2022
+Tags: Ecologie, Elon Musk
+Slug: renard-troisieme-generation
 Lang: en
 Translation: true
 

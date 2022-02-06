@@ -1,10 +1,9 @@
 Title: Renard de troisième génération
 Date: 2022-01-30
-Category: Poésie
-Tags: écologie, Elon Musk
-Slug: trois-générations-renard
+Category: Janvier 2022
+Tags: Ecologie, Elon Musk
+Slug: renard-troisieme-generation
 Lang: fr
-Translation: true
 Summary: Des générations de renards et une écologie à revoir.
 
 Un renard dans un champ promenait sa portée :   
@@ -12,7 +11,7 @@ Six renardeaux vifs, curieux et enjoués.
 Non loin de là un lièvre dressa ses oreilles…   
 Trop tard ! L'alerte renard se lança à sa poursuite.    
 Il referma sa gueule sur cette réjouissance fortuite,   
-Scruté par le plus observateur des apprentis mammifères,     
+Scruté par le plus attentif de ses apprentis mammifères,     
 Tandis que les autres, occupés à leurs affaires,    
 S'attachaient à dénicher rats, mulots et campagnols.    
 Quelle belle journée ! Le champ leur offrait l'abondance.   
@@ -26,7 +25,7 @@ Mais la multitude des renards allant croissante,
 Le lièvre se fit plus rare, sa traque plus épuisante.   
 Notre quadrupède, éreinté par une course infructueuse,  
 Se rabattit sur des goujons et grenouilles vaseuses     
-Qu'il attrapa à grand peine au bord de l'étang.     
+Qu'il attrapa à grand-peine au bord de l'étang.     
 Il ne s'agissait guère là de mets succulents,   
 Mais cela suffirait à nourrir ses petits.   
 Sa portée ne fut que de deux : Tristan et Léonie
