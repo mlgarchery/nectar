@@ -13,7 +13,7 @@
         {% if articles[0].date.month == month and articles[0].date.year == year %}
             <h2>Dernière publication: {{categorie}} </h2>
             {% for article in articles %}
-                <ul>
+                <ul id="post-list">
                     <li><article class="hentry">
                         <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                         <footer class="post-info">
@@ -34,7 +34,7 @@
     {% block content_title %}
     <h2>All articles</h2>
     {% endblock %}
-    <ul>
+    <ul id="post-list">
     {% for article in articles_page.object_list %}
         <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>

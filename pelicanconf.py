@@ -1,8 +1,11 @@
-AUTHOR = 'Cyrané'
+AUTHOR = 'Martial'
 SITENAME = 'Nectar Journal'
 SITEURL = ''
 # place at root with filename favicon.ico the images/favicon-256x256.png file
-EXTRA_PATH_METADATA = {'images/favicon-256x256.png': {'path': 'favicon.ico'},}
+EXTRA_PATH_METADATA = {
+    'images/favicon.png': {'path': 'favicon.ico'},
+    'images/logo.svg': {'path': 'logo.svg'}
+}
 
 PATH = 'content'
 

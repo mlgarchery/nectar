@@ -3,6 +3,7 @@ Date: 2022-01-30
 Category: Janvier 2022
 Tags: Ecologie, Elon Musk
 Slug: renard-troisieme-generation
+Authors: Martial, blg
 Lang: fr
 Summary: Des générations de renards et une écologie à revoir.
 

@@ -35,8 +35,12 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1 id="title"><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+          <a id="title" href="{{ SITEURL }}/">
+            <img id="title-logo" src="{{SITEURL}}/logo.svg" alt="{{SITENAME}}"/>
+          </a>
         </header><!-- /#banner -->
+        {% block content %}
+        {% endblock %}
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
@@ -54,8 +58,6 @@
           {% endfor %}
         {% endif %}
         </ul></nav><!-- /#menu -->
-        {% block content %}
-        {% endblock %}
         <footer id="contentinfo" class="body">
           <a href="{{ SITEURL }}/about.html">A propos</a>
         </footer><!-- /#contentinfo -->

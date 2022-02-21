@@ -23,22 +23,29 @@
 
 {% block content %}
 <section id="content" class="body">
-  <header>
+  <!-- <header>
     <h2 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
          title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
  {% import 'translations.html' as translations with context %}
- {{ translations.translations_for(article) }}
-  </header>
+ {{ translations.translations_for(article) }} -->
+  <!-- </header> -->
+  <div class="entry-content">
+    {{ article.content }}
+  </div><!-- /.entry-content -->
   <footer class="post-info">
-    <time class="published" datetime="{{ article.date.isoformat() }}">
+    <div>
+      {% import 'translations.html' as translations with context %}
+      {{ translations.translations_for(article) }} 
+    </div>
+    <!-- <time class="published" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
-    </time>
-    {% if article.modified %}
+    </time> -->
+    <!-- {% if article.modified %}
     <time class="modified" datetime="{{ article.modified.isoformat() }}">
       {{ article.locale_modified }}
     </time>
-    {% endif %}
+    {% endif %} -->
     {% if article.authors %}
     <address class="vcard author">
       Par {% for author in article.authors %}
@@ -60,8 +67,5 @@
     </div>
     {% endif %}
   </footer><!-- /.post-info -->
-  <div class="entry-content">
-    {{ article.content }}
-  </div><!-- /.entry-content -->
 </section>
 {% endblock %}
