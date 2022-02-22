@@ -1,6 +1,6 @@
 Title: Renard de troisième génération
 Date: 2022-01-30
-Category: Janvier 2022
+Category: Janvier22
 Tags: Ecologie, Elon Musk
 Slug: renard-troisieme-generation
 Authors: Martial, blg

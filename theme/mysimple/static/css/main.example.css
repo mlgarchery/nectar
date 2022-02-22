@@ -384,29 +384,29 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 /***** Sections *****/
 /* Blog */
-.hentry {
+.article-listed {
 	display: block;
 	clear: both;
 	border-top: 1px solid #eee;
 	padding: 1.5em 0;
 }
-li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
-#content > .hentry {padding: 1em 0;}
-.hentry img{display : none ;}
+li:first-child .article-listed, #content > .article-listed {border: 0; margin: 0;}
+#content > .article-listed {padding: 1em 0;}
+.article-listed img{display : none ;}
 .entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
 
-.hentry .post-info * {font-style: normal;}
+.article-listed .post-info * {font-style: normal;}
 
 	/* Content */
-	.hentry footer {margin-bottom: 2em;}
-	.hentry footer address {display: inline;}
+	.article-listed footer {margin-bottom: 2em;}
+	.article-listed footer address {display: inline;}
 	#posts-list footer address {display: block;}
 
 	/* Blog Index */
 	#posts-list {list-style: none; margin: 0;}
-	#posts-list .hentry {padding-left: 10px; position: relative;}
+	#posts-list .article-listed {padding-left: 10px; position: relative;}
 
 	#posts-list footer {
 		left: 10px;

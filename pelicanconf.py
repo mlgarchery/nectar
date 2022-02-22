@@ -7,6 +7,8 @@ EXTRA_PATH_METADATA = {
     'images/logo.svg': {'path': 'logo.svg'}
 }
 
+FILENAME_METADATA = '(?P<title>.*)'  # the title is deduced from the filename
+
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'

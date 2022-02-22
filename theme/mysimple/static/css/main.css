@@ -9,19 +9,22 @@
 */
 
 /* Imports */
-/* @import url("reset.css"); */
+@import url("reset.css");
 
 /* article memento-mori */
 @import url("app.c1a44f07.css");
 
-
+html{
+	height: 100%;
+}
 /***** Global *****/
 /* Body */
 body {
+	height: 100%;
     background: #F5F4EF;
     color: #000305;
     /* font-size: 87.5%; Base font size: 14px */
-	font-size: 16px;
+	font-size: 2.2vh;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.429;
     margin: 0;
@@ -29,22 +32,33 @@ body {
     text-align: left;
 }
 
+a {
+	color: black;
 
-@media screen and (max-width:1024px) {
-    body {
-		font-size: 3vh;
-    }
-
-	#banner {
-		height: 10vh;
-	}
 }
 
 #banner{
 	background-color: black;
+	padding: 10px;
+	user-select: none;
 }
+
+@media screen and (max-width:1024px) {
+    body {
+		font-size: 3vh;
+    } */
+
+	/* #banner {
+		height: 10vh;
+	} */
+}
+
 #banner img{
-	fill: white;
+	width: 35vh;
+	max-height: 200px;
+	/* top | right | bottom | left */
+	padding: 10px 50px;
+
 }
 /*
 	Body
@@ -53,28 +67,65 @@ body {
 	background: #fff;
 	/* margin-bottom: 2em; */
 	/* overflow: hidden; */
-	
+	/* height: 100%; */
 }
 
 /* post/entry content in this */
 .entry-content{}
 
-footer{
-	padding-right: 5vw;
+.onearticle-post-info {
+	float: right;
+	background-color: black;
+	color: white;
 	text-align: right;
+
+}
+.onearticle-post-info a{
+	margin-right: 10px;
+	color: white;
 }
 
-nav {
-	background-color: black;
+.article-listed{
+	margin: 10px
 }
 
-/* About */
-#contentinfo{
-	background-color: black;
+/* article info (post-info) in list view (index, categorie)  */
+.post-info{
+	margin-right: 10px;
 }
-
 
 /*
 	Footer
 *****************/
-#contentinfo {padding-bottom: 2em; text-align: right;}
+#sitefooter{
+	background-color: black;
+}
+
+#menu{
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+	color: wheat;
+	
+}
+
+#menu a{
+	display: block;
+	margin: 10px 7px;
+	padding: 4px;
+	border-top: 2px solid white;
+	color: white;
+	text-decoration: none;
+	user-select: none;
+}
+
+
+#menu a.active, #menu a:hover {
+	color: black;
+	background-color: white;
+}
+
+#sitefooter #about{
+	display: block;
+	text-align: right;
+}

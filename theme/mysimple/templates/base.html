@@ -41,25 +41,31 @@
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in pages %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
+        
+        {% if not category %}
+        {% set category = categories[0][0] %}
         {% endif %}
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-          {% for cat, null in categories %}
-            {% if cat!="misc" %}
-              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-            {% endif %}
+
+        <footer id="sitefooter">
+          <div id="menu">
+          <!-- {% for title, link in MENUITEMS %}
+              <li><a href="{{ link }}">{{ title }}</a></li>
           {% endfor %}
-        {% endif %}
-        </ul></nav><!-- /#menu -->
-        <footer id="contentinfo" class="body">
-          <a href="{{ SITEURL }}/about.html">A propos</a>
+          {% if DISPLAY_PAGES_ON_MENU %}
+            {% for p in pages %}
+              {{ p }}
+              <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+          {% endif %} -->
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+              {% if cat!="misc" %}
+                <a {% if cat == category %} class="active"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          </div><!-- /#menu -->
+          <a id="about" href="{{ SITEURL }}/about.html">A propos</a>
         </footer><!-- /#contentinfo -->
 </body>
 </html>
