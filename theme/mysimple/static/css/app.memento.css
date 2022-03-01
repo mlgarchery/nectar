@@ -1,0 +1,64 @@
+#appmemento {
+    display: flex;
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+	#appmemento{
+		display: flex;
+        flex-direction: column;
+	}
+} 
+
+
+#appmemento #setup {
+    max-width: 500px;
+    font-family: Arial;
+    color: #fff;
+    min-width: 500px;
+}
+
+#appmemento #setup input {
+    margin: 2px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+#appmemento #setup .percentage {
+    display: inline-block;
+    width: 20px
+}
+
+#appmemento #life {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0
+}
+
+#appmemento .month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    font-size: 9px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#appmemento .month:hover {
+    background-color: #6e6e6e;
+    cursor: pointer
+}
+
+#appmemento .completedMonthes {
+    background-color: #000
+}
