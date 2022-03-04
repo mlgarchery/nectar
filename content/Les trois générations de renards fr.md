@@ -8,7 +8,7 @@ Lang: fr
 Summary: Des générations de renards et une écologie à revoir.
 
 
-<div id="left" style="font-size: 16px">
+<div id="left">
 <p>
 Un renard dans un champ promenait sa portée : <br>
 Six renardeaux vifs, curieux et enjoués. <br>

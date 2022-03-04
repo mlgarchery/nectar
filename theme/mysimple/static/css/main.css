@@ -24,12 +24,21 @@ body {
     background: black;
     color: #000305;
     /* font-size: 87.5%; Base font size: 14px */
-	font-size: 2.5vh;
+	font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
     text-align: left;
+}
+@media (max-width: 500px) {
+	body{
+		font-size: 2.2vh;
+	}
+	#banner img {
+		height: 9vh;
+		min-height: 100px;
+	}
 }
 
 a {
@@ -39,18 +48,24 @@ a {
 #banner{
 	text-align: center;
 	min-width: 375px;
-	border-right: 1px solid white;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	user-select: none;
 }
+
+
 #banner img{
 	height: 125px;
 	/* top | right | bottom | left */
 }
 
+#post-list {
+	padding: 10px;
+}
+
 #left{
 	min-width: 500px;
+	padding: 10px;
 }
 
 #left p{
@@ -67,11 +82,7 @@ a {
 	width: 100%;
 }
 
-@media screen and (min-width: 501px) {
-	body{
-		font-size: 18x;
-	}
-}
+
 
 @media screen and (min-width:1200px) {
     #right {
@@ -94,8 +105,7 @@ a {
 }
 
 /* post/entry content in this */
-.entry-content{
-}
+.entry-content{}
 
 .onearticle-post-info {
 	background-color: black;
@@ -106,10 +116,6 @@ a {
 .onearticle-post-info a{
 	margin-right: 10px;
 	color: white;
-}
-
-.article-listed{
-	margin: 10px
 }
 
 /* article info (post-info) in list view (index, categorie)  */
@@ -149,6 +155,9 @@ a {
 }
 
 #sitefooter #about{
+	color: white;
 	display: block;
 	text-align: right;
+	margin-right: 10px;
+	user-select: none;
 }

@@ -4,4 +4,7 @@ Slug: about
 Lang: fr
 Url: about.html
 
+
+<div id="left">
 blabla
+</div>

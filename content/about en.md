@@ -6,4 +6,6 @@ Lang: en
 Translation: true
 Url: about-en.html
 
+<div id="left">
 About the
+</div>
