@@ -42,10 +42,13 @@
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}
-        
+        <p style="color:white;">
+
         {% if not category %}
-        {% set category = categories[0][0] %}
+          {% set category = articles[0].category %} 
         {% endif %}
+        
+        </p>
 
         <footer id="sitefooter">
           <div id="menu">
@@ -59,14 +62,14 @@
             {% endfor %}
           {% endif %} -->
           {% if DISPLAY_CATEGORIES_ON_MENU %}
-            {% for cat, null in categories %}
+            {% for cat, articles in categories|sort(attribute="1.0.date")|reverse %}
               {% if cat!="misc" %}
                 <a {% if cat == category %} class="active"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
               {% endif %}
             {% endfor %}
           {% endif %}
-          </div><!-- /#menu -->
-          <a id="about" href="{{ SITEURL }}/about.html">A propos</a>
+        </div><!-- /#menu -->
+        <a id="about" href="{{ SITEURL }}/about.html">A propos</a>
         </footer><!-- /#contentinfo -->
 </body>
 </html>

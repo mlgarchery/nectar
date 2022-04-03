@@ -11,9 +11,8 @@
     and print its articles the same way as in this category -->
     {% for categorie, articles in categories%}
         {% if articles[0].date.month == month and articles[0].date.year == year %}
-            <!-- <h2>Dernière publication: {{categorie}} </h2> -->
+            <ul id="post-list">
             {% for article in articles %}
-                <ul id="post-list">
                     <li><article class="article-listed">
                         <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                         <footer class="post-info">
@@ -26,8 +25,8 @@
                         </footer><!-- /.post-info -->
                         <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
                     </article></li>
-                </ul>
-            {% endfor %}
+                    {% endfor %}
+            </ul>
         {% endif %}
     {% endfor %}
 {% else %}
