@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [ main ]
+
+name: 🚀 Deploy website on push
+jobs:
+  build-and-ftp-deploy:
+    runs-on: ubuntu-latest
+    # env:
+    #   SSH_USER: ${{ secrets.USERNAME }}
+    #   SSH_HOST: ${{ secrets.HOST }}
+    #   SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: Build static html files
+      run: |
+        pip install -r requirements.txt
+        pelican
+
+    - name: 📂 Deploy files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTPSERVER }}
+        username: ${{ secrets.FTPUSERNAME }}
+        password: ${{ secrets.FTPPASSWORD }}
+        local-dir: ./output/
+        server-dir: /public_html/
