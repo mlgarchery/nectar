@@ -5,7 +5,6 @@ Url: about.html
 
 
 <div id="left">
-AJOUTE APRÈS UN COMMIT
 Jamais dans notre histoire la désinformation et la surinformation (ou ce que j'appelle le bruit)
 n'ont été aussi répandus.<br/>
 Ces fléaux ne sont pas sans conséquences sur notre vie quotidienne: ils sont une incroyable perte de temps, un obstacle à la diffusion du savoir et de la vérité.
