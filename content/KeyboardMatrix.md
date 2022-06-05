@@ -1,6 +1,6 @@
 Title: Keyboard Matrix
 Date: 2022-05-30
-Slug: keyboard-matrix
+Slug: keyboard-matrix-explanation
 Summary: Quels système permet de réduire le nombre de PIN nécéssaires pour faire un clavier ?
 Category: Mai22
 
