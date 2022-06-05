@@ -34,7 +34,7 @@ Category: Mai22
     <h3> Et voilà ! </h3>
     <p>
         Pour aller plus loin et comprendre comment ont été résolu les problèmes de ghosting induits par les matrices, vous pouvez vous référer à la section <b>6. Three Simultaneous Key Presses and Ghosting</b> de 
-        <a href="https://www.dribin.org/dave/keyboard/one_html/">cet article</a>. Mais pour faire simple, il s'agit simplement d'ajouter une diode par touche !
+        <a href="https://www.dribin.org/dave/keyboard/one_html/">cet article</a>. Mais pour résumer, il s'agit simplement d'ajouter une diode par touche !
     </p>
     <br>
     <p>
