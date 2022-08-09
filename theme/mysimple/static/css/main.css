@@ -106,12 +106,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .onearticle-post-info{
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: black;
 }
 
 .onearticle-post-info a{
 	margin-right: 10px;
+	color: white;
 }
 
 /* article info (post-info) in list view (index, categorie)  */
