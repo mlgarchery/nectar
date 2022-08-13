@@ -102,7 +102,7 @@ Category: Juillet22
     </center>
     <center>
         <img src="images/keyboard/realisation/boitier/2.jpg" width="600">
-        <h5> Une fois la partie inférieure du boîtier faite. Il me semble évident que la partie haute doit être faite très précisemment car elle compte bcp dans l'esthétisme général du clavier. Je me remet à une impression 3D pour cette partie là. </h5>
+        <h5> Une fois la partie inférieure du boîtier faite. Il me semble évident que la partie haute doit être faite très précisemment car elle compte bcp dans l'ésthétique générale du clavier. Je me remet à une impression 3D pour cette partie là. </h5>
     </center>
 </div>
 

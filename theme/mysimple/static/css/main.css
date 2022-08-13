@@ -27,6 +27,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 a {
@@ -133,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: row;
 	text-align: right;
 	color: wheat;
-	
+	overflow: auto;
 }
 
 #menu a{
