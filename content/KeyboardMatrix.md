@@ -5,6 +5,13 @@ Summary: Quels système permet de réduire le nombre de PIN nécéssaires pour f
 Category: Mai22
 
 <div id="left">
+    <style>
+        img {
+            width: 100%;
+            min-width: 120px;
+            max-width: 400px;
+        }
+    </style>
     <h1>Le circuit électrique des claviers</h1>
     <br>
     <p>
@@ -23,14 +30,14 @@ Category: Mai22
         En bref, pour qu'on puisse faire un clavier avec moins de PIN,  l'idée a été de transmettre une partie de la complexité au microcontrôleur en construisant un circuit en matrice (Keyboard matrix).
     </p>
     <center>
-        <img src="images/keyboard/MatriceKeyboard.svg" width="600">
+        <img src="images/keyboard/MatriceKeyboard.svg" ùa="600">
         <h4> Avec columns+rows PINs on peut gérer colums*rows touches. </h4>
     </center>
     <p>
         Cela est fait de la façon suivante: le microcontrôleur parcourt à haute fréquence chaque colonne en y faisant passer un courant.
         Si une touche est pressée, un courant fera la jonction entre la colonne et la ligne, exemple D et 3. Au préalable, nous auront flashé la <a href="https://fr.wikipedia.org/wiki/M%C3%A9moire_morte">ROM</A> du microcontrôleur avec une configuration indiquant à quel caractère unicode D3 correspond. Le microcontrôleur sera alors en mesure d'envoyer ce caractère à l'ordinateur.
     </p>
-    <center style="padding:15px"><img src="images/keyboard/cycles.gif" width="300"></center>
+    <center style="padding:15px"><img src="images/keyboard/cycles.gif"></center>
     <h2>Petit problème de ghosting</h2>
     <p>
         Voici 4 touches A, B, C et D, sur les colonnes C1, C2 et les lignes L1, L2.<br>
@@ -38,12 +45,12 @@ Category: Mai22
         Pourtant C n'est pas en contact. Il s'agit du "ghosting",
         une touche (C) est considérée comme appuyée par erreur, du fait de l'activation simultanée de touches qui l'entourent.
     </p>
-    <center style="padding:15px"><img src="images/keyboard/img1penpot.svg" width="300"></center>
-    <center style="padding:15px"><img src="images/keyboard/img2penpot.svg" width="300"></center>
+    <center style="padding:15px"><img src="images/keyboard/img1penpot.svg"></center>
+    <center style="padding:15px"><img src="images/keyboard/img2penpot.svg"></center>
     <p>
         Pour régler ce problème, on ajoute une diode par touche, élément électronique qui ne laisse passer le courant que dans un sens:
     </p>
-    <center style="padding:15px"><img src="images/keyboard/img3penpot.svg" width="300"></center>
+    <center style="padding:15px"><img src="images/keyboard/img3penpot.svg"></center>
     <p>
     <h3> Et voilà, plus de problème ! </h3>
         Pour plus de détails, veuillez vous référer à <a href="https://www.dribin.org/dave/keyboard/one_html/">cet article</a>. 
