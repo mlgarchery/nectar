@@ -22,18 +22,18 @@ Category: Juillet22
             <li>- Pour comprendre comment ça marche et pouvoir le réparer si besoin.</li>
         </ul>
         <br>
-        Un clavier en grande partie fait de recyclage: les fils de cuivre ont été récupérés d'ancien câbles électriques, 
+        Un clavier en grande partie fait de recyclage: les fils de cuivre ont été récupérés d'anciens câbles électriques, 
         la plaque sur laquelle reposent le circuit est faite en partie de bois recyclé, la plaque pour soutenir les switchs a été récupérée d'un vieux clavier.
         Le peu de soudures permet un réparage facile.
     </p>
     <p>
         Fait amusant, le clavier est presque intégralement fait au pistolet à colle.
-        Il m'a servi pour l'adhésion des composants à la plaque, d'isolant, créer des séârations/supports entre les diverses plaques..
+        Il m'a servi pour l'adhésion des composants à la plaque, d'isolant, créer des séparations/supports entre les diverses plaques..
     </p>
     <h4>Configuration du microcontrôleur</h4>
     <center>
         <img src="images/keyboard/realisation/micro/0.jpg" width="600">
-        <h5> Flasher le firmware en utilisant QMK. Il a fallu connecter les PINs Ground et Reset pour mettre le micro controleur en mode DFU.</h5>
+        <h5> Flasher le firmware en utilisant QMK. Il a fallu connecter les PINs Ground et Reset pour mettre le microcontrôleur en mode DFU.</h5>
     </center>
     <center>
         <img src="images/keyboard/realisation/micro/1.jpg" width="600">
@@ -42,7 +42,7 @@ Category: Juillet22
     <h4>Comment faire la plaque sur laquelle on posera les switchs</h4>
     <p>
         Réponse: en coupant un vieux clavier en deux et en ne gardant que la partie de gauche.
-        J'ai effectivement remarqué que bcp de touches étaient inutiles, comme toutees les touches après le Alt Gr. Je les ai remplacées par
+        J'ai effectivement remarqué que bcp de touches étaient inutiles, comme toutees les touches à droite de Alt Gr. Je les ai remplacées par
         les touches de directions.
         Le pavé numérique est souvent inutilisé également (j'utilise régulièrement les touches F1 à F5 et F9 à F12 en revanche).
         Cela fait gagner de la place horizontale et permet d'utiliser sa souris avec moins d'inconfort.
@@ -64,7 +64,7 @@ Category: Juillet22
     </center>
     <center>
         <img src="images/keyboard/realisation/circuit/2.jpg" width="600">
-        <h5> Enrouler les fils de cuivre autours des diodes, cela est presque artistique :) </h5>
+        <h5> Enrouler les fils de cuivre autour des diodes, cela est presque artistique :) </h5>
     </center>
     <center>
         <img src="images/keyboard/realisation/circuit/3.jpg" width="600">
@@ -98,11 +98,11 @@ Category: Juillet22
     </center>
     <center>
         <img src="images/keyboard/realisation/boitier/1.jpg" width="600">
-        <h5> Comparaison avec un autre clavier. Achat d'un solide câble USB-C blanc. </h5>
+        <h5> Comparaison avec un autre clavier (et achat d'un solide câble USB-C blanc).</h5>
     </center>
     <center>
         <img src="images/keyboard/realisation/boitier/2.jpg" width="600">
-        <h5> Une fois la partie inférieure du boîtier faite. Il me semble évident que la partie haute doit être faite très précisemment car elle compte bcp dans l'ésthétique générale du clavier. Je me remet à une impression 3D pour cette partie là. </h5>
+        <h5> Une fois la partie inférieure du boîtier faite, il me semble évident que la partie haute doit être faite très précisemment car elle compte pour bcp dans l'ésthétique générale du clavier. Je m'en remets à une impression 3D pour cette partie là. </h5>
     </center>
 </div>
 
