@@ -1,8 +1,10 @@
-# nectar journal
+# Nectar journal
 
-publication bimensuelle de qualité, avec un accent particulier mis sur la typographie.
-
+Publications de qualité. Peu fréquentes.
 
 ## Dev
 
+Install: `poetry install` suivi de `poetry shell`
+
+Puis:
 `pelican -lr`

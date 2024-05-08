@@ -3,10 +3,11 @@ name = "nectar"
 version = "0.1.0"
 description = ""
 authors = ["mlgarchery <martial.garchery@gmail.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pelican = {extras = ["markdown"], version = "^4.7.1"}
+pelican = { extras = ["markdown"], version = "^4.7.1" }
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
